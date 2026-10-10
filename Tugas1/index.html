@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ciremai Explore - Platform sederhana untuk pemesanan paket hiking Gunung Ciremai."
+    />
+    <title>Ciremai Explore | Hiking Gunung Ciremai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="#home" class="logo">CIREMAI<span>EXPLORE</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Beranda</a>
+        <a href="#paket">Paket</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pemesanan">Pemesanan</a>
+      </nav>
+
+      <a href="#pemesanan" class="nav-button">Pesan Sekarang</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        ☰
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">EXPLORE • HIKE • EXPERIENCE</p>
+          <h1>Temukan Petualangan<br /><span>di Gunung Ciremai</span></h1>
+          <p class="hero-text">
+            Pesan perjalanan hiking dengan lebih mudah. Pilih paket, tentukan
+            tanggal, dan siapkan diri untuk menikmati alam tertinggi di Jawa
+            Barat.
+          </p>
+          <div class="hero-actions">
+            <a href="#paket" class="btn btn-primary">Lihat Paket</a>
+            <a href="#tentang" class="btn btn-outline">Pelajari Ciremai</a>
+          </div>
+        </div>
+
+        <div class="hero-info">
+          <div><strong>3.078 MDPL</strong><span>Ketinggian</span></div>
+          <div><strong>JAWA BARAT</strong><span>Lokasi</span></div>
+          <div><strong>HIKING</strong><span>Pengalaman</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="paket">
+        <div class="section-heading">
+          <p class="eyebrow">PILIH PERJALANANMU</p>
+          <h2>Paket Hiking Ciremai</h2>
+          <p>
+            Pilih paket sesuai kebutuhan dan pengalaman hiking yang kamu
+            inginkan.
+          </p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card">
+            <div class="package-image package-image-1">
+              <span class="tag">POPULER</span>
+            </div>
+            <div class="package-body">
+              <div class="package-title">
+                <h3>Basic Hiking</h3>
+                <span>1 Hari</span>
+              </div>
+              <p>
+                Cocok untuk pendaki yang ingin menikmati perjalanan singkat
+                bersama teman.
+              </p>
+              <ul>
+                <li>✓ Pendaftaran pendakian</li>
+                <li>✓ Briefing sebelum perjalanan</li>
+                <li>✓ Pemandu perjalanan</li>
+                <li>✓ Air mineral</li>
+              </ul>
+              <div class="package-footer">
+                <div><small>Mulai dari</small><strong>Rp250.000</strong></div>
+                <button class="select-package" data-package="Basic Hiking">
+                  Pilih
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card featured">
+            <div class="package-image package-image-2">
+              <span class="tag">REKOMENDASI</span>
+            </div>
+            <div class="package-body">
+              <div class="package-title">
+                <h3>Camping Adventure</h3>
+                <span>2 Hari 1 Malam</span>
+              </div>
+              <p>
+                Nikmati suasana pegunungan dengan pengalaman camping yang lebih
+                lengkap.
+              </p>
+              <ul>
+                <li>✓ Pendaftaran pendakian</li>
+                <li>✓ Pemandu perjalanan</li>
+                <li>✓ Tenda & perlengkapan camping</li>
+                <li>✓ Air mineral & konsumsi</li>
+              </ul>
+              <div class="package-footer">
+                <div><small>Mulai dari</small><strong>Rp450.000</strong></div>
+                <button class="select-package" data-package="Camping Adventure">
+                  Pilih
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card">
+            <div class="package-image package-image-3">
+              <span class="tag">GROUP</span>
+            </div>
+            <div class="package-body">
+              <div class="package-title">
+                <h3>Group Adventure</h3>
+                <span>Custom</span>
+              </div>
+              <p>
+                Paket untuk organisasi, komunitas, atau kelompok yang ingin
+                hiking bersama.
+              </p>
+              <ul>
+                <li>✓ Minimal 5 orang</li>
+                <li>✓ Pemandu kelompok</li>
+                <li>✓ Briefing & perlengkapan dasar</li>
+                <li>✓ Harga dapat disesuaikan</li>
+              </ul>
+              <div class="package-footer">
+                <div><small>Mulai dari</small><strong>Rp350.000</strong></div>
+                <button class="select-package" data-package="Group Adventure">
+                  Pilih
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="tentang">
+        <div class="about-image">
+          <div class="about-badge"><strong>3.078</strong><span>MDPL</span></div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">TENTANG DESTINASI</p>
+          <h2>Gunung Ciremai</h2>
+          <p>
+            Gunung Ciremai merupakan gunung tertinggi di Jawa Barat dengan
+            ketinggian sekitar 3.078 meter di atas permukaan laut. Kawasannya
+            menawarkan hutan, jalur pendakian, udara sejuk, dan pemandangan alam
+            yang menarik.
+          </p>
+          <p>
+            Ciremai Explore dibuat sebagai konsep platform pemesanan sederhana
+            untuk membantu calon pendaki memilih paket perjalanan dan mengirim
+            data pemesanan dengan lebih praktis.
+          </p>
+
+          <div class="features">
+            <div>
+              <span>01</span>
+              <div>
+                <strong>Praktis</strong><small>Pesan dalam satu halaman.</small>
+              </div>
+            </div>
+            <div>
+              <span>02</span>
+              <div>
+                <strong>Terorganisir</strong
+                ><small>Informasi paket lebih jelas.</small>
+              </div>
+            </div>
+            <div>
+              <span>03</span>
+              <div>
+                <strong>Berpetualang</strong
+                ><small>Siapkan perjalananmu.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking section" id="pemesanan">
+        <div class="section-heading">
+          <p class="eyebrow">BOOKING</p>
+          <h2>Pesan Perjalananmu</h2>
+          <p>Isi data berikut untuk membuat permintaan pemesanan.</p>
+        </div>
+
+        <div class="booking-layout">
+          <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="nama"
+                  placeholder="Masukkan nama"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="telepon">Nomor WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telepon"
+                  placeholder="08xxxxxxxxxx"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="paketPilihan">Pilih Paket</label>
+                <select id="paketPilihan" required>
+                  <option value="">-- Pilih paket --</option>
+                  <option value="Basic Hiking">Basic Hiking - Rp250.000</option>
+                  <option value="Camping Adventure">
+                    Camping Adventure - Rp450.000
+                  </option>
+                  <option value="Group Adventure">
+                    Group Adventure - Rp350.000
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="jumlah">Jumlah Pendaki</label>
+                <input
+                  type="number"
+                  id="jumlah"
+                  min="1"
+                  max="20"
+                  value="1"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tanggal">Tanggal Pendakian</label>
+                <input type="date" id="tanggal" required />
+              </div>
+              <div class="form-group">
+                <label for="jalur">Jalur / Basecamp</label>
+                <select id="jalur" required>
+                  <option value="">-- Pilih jalur --</option>
+                  <option value="Apuy">Apuy</option>
+                  <option value="Linggarjati">Linggarjati</option>
+                  <option value="Palutungan">Palutungan</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="catatan">Catatan Tambahan</label>
+              <textarea id="catatan" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full">
+              Kirim Permintaan Pemesanan
+            </button>
+          </form>
+
+          <aside class="booking-summary">
+            <span class="summary-icon">▲</span>
+            <h3>Siap Mendaki?</h3>
+            <p>
+              Pastikan kondisi fisik, perlengkapan, dan informasi jalur sudah
+              kamu persiapkan sebelum melakukan pendakian.
+            </p>
+            <div class="summary-line"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="#home" class="logo">CIREMAI<span>EXPLORE</span></a>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Beranda</a>
+        <a href="#paket">Paket</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pemesanan">Pemesanan</a>
+      </div>
+    </footer>
+
+    <div class="modal" id="successModal">
+      <div class="modal-box">
+        <button class="modal-close" id="modalClose">×</button>
+        <div class="success-icon">✓</div>
+        <h3>Pemesanan Berhasil Dibuat</h3>
+        <p id="successText">Data pemesanan berhasil diterima.</p>
+        <button class="btn btn-primary" id="modalOk">Oke</button>
+      </div>
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => navLinks.classList.remove("show"));
+      });
+
+      const packageSelect = document.getElementById("paketPilihan");
+
+      document.querySelectorAll(".select-package").forEach((button) => {
+        button.addEventListener("click", () => {
+          packageSelect.value = button.dataset.package;
+          document
+            .getElementById("pemesanan")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      const today = new Date().toISOString().split("T")[0];
+      document.getElementById("tanggal").min = today;
+
+      const form = document.getElementById("bookingForm");
+      const modal = document.getElementById("successModal");
+      const modalClose = document.getElementById("modalClose");
+      const modalOk = document.getElementById("modalOk");
+      const successText = document.getElementById("successText");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+        const paket = packageSelect.value;
+        const jumlah = document.getElementById("jumlah").value;
+        const tanggal = document.getElementById("tanggal").value;
+
+        successText.textContent = `Terima kasih, ${nama}. Permintaan ${paket} untuk ${jumlah} pendaki pada tanggal ${tanggal} sudah dicatat di halaman ini.`;
+
+        modal.classList.add("show");
+        form.reset();
+        document.getElementById("tanggal").min = today;
+      });
+
+      function closeModal() {
+        modal.classList.remove("show");
+      }
+
+      modalClose.addEventListener("click", closeModal);
+      modalOk.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+    </script>
+  </body>
+</html>
